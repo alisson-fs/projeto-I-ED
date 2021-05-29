@@ -1,0 +1,83 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Projeto I - Processamento de XML com imagens binárias: Código-Fonte de include/xml.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Projeto I - Processamento de XML com imagens binárias
+   </div>
+   <div id="projectbrief">Processamento de XML com imagens binárias.</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Busca');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Busca');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">xml.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="xml_8h.html">Vá para a documentação deste arquivo.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#ifndef XML_H</span></div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#define XML_H</span></div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &lt;cstddef&gt;</span></div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;</div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacexml__processing.html">xml_processing</a> {</div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;</div><div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="classxml__processing_1_1XML.html">   19</a></span>&#160;<span class="keyword">class </span><a class="code" href="classxml__processing_1_1XML.html">XML</a> {</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; <span class="keyword">public</span>:</div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <a class="code" href="classxml__processing_1_1XML.html#a3abbe87e5951c3c9b9c7992f6aea79f4">XML</a>(<span class="keyword">const</span> std::string&amp; xml_string);</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    </div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classxml__processing_1_1XML.html#aca612f22f1eea0d502fd20423638c844">validation</a>();</div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    </div><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    std::string <a class="code" href="classxml__processing_1_1XML.html#a85d74f298dcdd2810838e2d1665cee6a">extract</a>(<span class="keyword">const</span> std::string&amp; tag_begin,</div><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;                    <span class="keyword">const</span> std::string&amp; tag_end,</div><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;                    std::size_t&amp; position);</div><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; <span class="keyword">private</span>:</div><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    std::string xml;</div><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;};</div><div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div><div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;}  <span class="comment">// namespace xml</span></div><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div><div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="preprocessor">#endif  // XML_H</span></div><div class="ttc" id="classxml__processing_1_1XML_html_aca612f22f1eea0d502fd20423638c844"><div class="ttname"><a href="classxml__processing_1_1XML.html#aca612f22f1eea0d502fd20423638c844">xml_processing::XML::validation</a></div><div class="ttdeci">bool validation()</div><div class="ttdoc">Faz a validação do arquivo xml passado. </div><div class="ttdef"><b>Definition:</b> xml.cpp:19</div></div>
+<div class="ttc" id="classxml__processing_1_1XML_html_a85d74f298dcdd2810838e2d1665cee6a"><div class="ttname"><a href="classxml__processing_1_1XML.html#a85d74f298dcdd2810838e2d1665cee6a">xml_processing::XML::extract</a></div><div class="ttdeci">std::string extract(const std::string &amp;tag_begin, const std::string &amp;tag_end, std::size_t &amp;position)</div><div class="ttdoc">Faz a extração do conteúdo entre as tags. </div><div class="ttdef"><b>Definition:</b> xml.cpp:51</div></div>
+<div class="ttc" id="classxml__processing_1_1XML_html"><div class="ttname"><a href="classxml__processing_1_1XML.html">xml_processing::XML</a></div><div class="ttdoc">Xml. </div><div class="ttdef"><b>Definition:</b> xml.h:19</div></div>
+<div class="ttc" id="namespacexml__processing_html"><div class="ttname"><a href="namespacexml__processing.html">xml_processing</a></div><div class="ttdoc">Código para processamento de xml. </div><div class="ttdef"><b>Definition:</b> matrix.h:13</div></div>
+<div class="ttc" id="classxml__processing_1_1XML_html_a3abbe87e5951c3c9b9c7992f6aea79f4"><div class="ttname"><a href="classxml__processing_1_1XML.html#a3abbe87e5951c3c9b9c7992f6aea79f4">xml_processing::XML::XML</a></div><div class="ttdeci">XML(const std::string &amp;xml_string)</div><div class="ttdoc">Construtor. </div><div class="ttdef"><b>Definition:</b> xml.cpp:15</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Gerado por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

@@ -1,0 +1,122 @@
+\hypertarget{classxml__processing_1_1Matrix}{}\section{Referência da Classe xml\+\_\+processing\+:\+:Matrix}
+\label{classxml__processing_1_1Matrix}\index{xml\+\_\+processing\+::\+Matrix@{xml\+\_\+processing\+::\+Matrix}}
+
+
+Matriz.  
+
+
+
+
+{\ttfamily \#include $<$matrix.\+h$>$}
+
+\subsection*{Métodos Públicos}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classxml__processing_1_1Matrix_a5862906904cd901685f72cc703084d83}{Matrix} (int n\+\_\+lines, int n\+\_\+columns)
+\begin{DoxyCompactList}\small\item\em Constroi uma matriz. \end{DoxyCompactList}\item 
+\hyperlink{classxml__processing_1_1Matrix_a38b41757af695c49ed75cdfabfd85c55}{$\sim$\+Matrix} ()
+\begin{DoxyCompactList}\small\item\em Destrói a matriz. \end{DoxyCompactList}\item 
+int \hyperlink{classxml__processing_1_1Matrix_abdb4dca9e7b39f73ec02b45a5818905f}{count\+\_\+connected} ()
+\begin{DoxyCompactList}\small\item\em Conta componentes conexos na matriz. \end{DoxyCompactList}\item 
+int \hyperlink{classxml__processing_1_1Matrix_af11b820c974f7cb01372ce2f705ac3bd}{get\+\_\+value} (int line, int column)
+\begin{DoxyCompactList}\small\item\em Pega uma posição da matriz. \end{DoxyCompactList}\item 
+void \hyperlink{classxml__processing_1_1Matrix_a38208a596efd623f573cac470d703955}{set\+\_\+value} (int line, int column, int value)
+\begin{DoxyCompactList}\small\item\em Coloca um inteiro na posição passada. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Descrição Detalhada}
+Matriz. 
+
+\subsection{Construtores \& Destrutores}
+\mbox{\Hypertarget{classxml__processing_1_1Matrix_a5862906904cd901685f72cc703084d83}\label{classxml__processing_1_1Matrix_a5862906904cd901685f72cc703084d83}} 
+\index{xml\+\_\+processing\+::\+Matrix@{xml\+\_\+processing\+::\+Matrix}!Matrix@{Matrix}}
+\index{Matrix@{Matrix}!xml\+\_\+processing\+::\+Matrix@{xml\+\_\+processing\+::\+Matrix}}
+\subsubsection{\texorpdfstring{Matrix()}{Matrix()}}
+{\footnotesize\ttfamily xml\+\_\+processing\+::\+Matrix\+::\+Matrix (\begin{DoxyParamCaption}\item[{int}]{n\+\_\+lines,  }\item[{int}]{n\+\_\+columns }\end{DoxyParamCaption})}
+
+
+
+Constroi uma matriz. 
+
+Constroi uma matriz do tipo ponteiro para ponteiro de inteiros. Esta matriz será nula, ou seja, todos os elementos são zero.
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em n\+\_\+lines} & Número de linhas da matriz. \\
+\hline
+{\em n\+\_\+columns} & Número de colunas da matriz. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classxml__processing_1_1Matrix_a38b41757af695c49ed75cdfabfd85c55}\label{classxml__processing_1_1Matrix_a38b41757af695c49ed75cdfabfd85c55}} 
+\index{xml\+\_\+processing\+::\+Matrix@{xml\+\_\+processing\+::\+Matrix}!````~Matrix@{$\sim$\+Matrix}}
+\index{````~Matrix@{$\sim$\+Matrix}!xml\+\_\+processing\+::\+Matrix@{xml\+\_\+processing\+::\+Matrix}}
+\subsubsection{\texorpdfstring{$\sim$\+Matrix()}{~Matrix()}}
+{\footnotesize\ttfamily xml\+\_\+processing\+::\+Matrix\+::$\sim$\+Matrix (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destrói a matriz. 
+
+Libera todo o espaço de memória ocupado pela matriz. 
+
+\subsection{Métodos}
+\mbox{\Hypertarget{classxml__processing_1_1Matrix_abdb4dca9e7b39f73ec02b45a5818905f}\label{classxml__processing_1_1Matrix_abdb4dca9e7b39f73ec02b45a5818905f}} 
+\index{xml\+\_\+processing\+::\+Matrix@{xml\+\_\+processing\+::\+Matrix}!count\+\_\+connected@{count\+\_\+connected}}
+\index{count\+\_\+connected@{count\+\_\+connected}!xml\+\_\+processing\+::\+Matrix@{xml\+\_\+processing\+::\+Matrix}}
+\subsubsection{\texorpdfstring{count\+\_\+connected()}{count\_connected()}}
+{\footnotesize\ttfamily int xml\+\_\+processing\+::\+Matrix\+::count\+\_\+connected (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Conta componentes conexos na matriz. 
+
+A matriz neste caso é uma imagem binária. Cada pixel conexo encontrado na matriz é rotulado com um valor inteiro e enfileirado utilizando uma fila encadeada. Utilizamos vizinhança-\/4 para o calculo de componentes conexos. A vizinhança-\/4 de um pixel são os pixels que estão em cima, em baixo, na direita e na esquerda.
+
+\begin{DoxyReturn}{Retorna}
+Inteiro com o número de componentes conexos na matriz. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classxml__processing_1_1Matrix_af11b820c974f7cb01372ce2f705ac3bd}\label{classxml__processing_1_1Matrix_af11b820c974f7cb01372ce2f705ac3bd}} 
+\index{xml\+\_\+processing\+::\+Matrix@{xml\+\_\+processing\+::\+Matrix}!get\+\_\+value@{get\+\_\+value}}
+\index{get\+\_\+value@{get\+\_\+value}!xml\+\_\+processing\+::\+Matrix@{xml\+\_\+processing\+::\+Matrix}}
+\subsubsection{\texorpdfstring{get\+\_\+value()}{get\_value()}}
+{\footnotesize\ttfamily int xml\+\_\+processing\+::\+Matrix\+::get\+\_\+value (\begin{DoxyParamCaption}\item[{int}]{line,  }\item[{int}]{column }\end{DoxyParamCaption})}
+
+
+
+Pega uma posição da matriz. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em line} & Linha onde será definido o valor. \\
+\hline
+{\em column} & Coluna onde será definido o valor.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+Inteiro que está na posição passada. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classxml__processing_1_1Matrix_a38208a596efd623f573cac470d703955}\label{classxml__processing_1_1Matrix_a38208a596efd623f573cac470d703955}} 
+\index{xml\+\_\+processing\+::\+Matrix@{xml\+\_\+processing\+::\+Matrix}!set\+\_\+value@{set\+\_\+value}}
+\index{set\+\_\+value@{set\+\_\+value}!xml\+\_\+processing\+::\+Matrix@{xml\+\_\+processing\+::\+Matrix}}
+\subsubsection{\texorpdfstring{set\+\_\+value()}{set\_value()}}
+{\footnotesize\ttfamily void xml\+\_\+processing\+::\+Matrix\+::set\+\_\+value (\begin{DoxyParamCaption}\item[{int}]{line,  }\item[{int}]{column,  }\item[{int}]{value }\end{DoxyParamCaption})}
+
+
+
+Coloca um inteiro na posição passada. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em line} & Linha onde será definido o valor. \\
+\hline
+{\em column} & Coluna onde será definido o valor. \\
+\hline
+{\em value} & Valor que será colocado na matriz. \\
+\hline
+\end{DoxyParams}
+
+
+A documentação para esta classe foi gerada a partir dos seguintes arquivos\+:\begin{DoxyCompactItemize}
+\item 
+include/\hyperlink{matrix_8h}{matrix.\+h}\item 
+src/\hyperlink{matrix_8cpp}{matrix.\+cpp}\end{DoxyCompactItemize}

@@ -1,0 +1,91 @@
+\hypertarget{classxml__processing_1_1XML}{}\section{Referência da Classe xml\+\_\+processing\+:\+:X\+ML}
+\label{classxml__processing_1_1XML}\index{xml\+\_\+processing\+::\+X\+ML@{xml\+\_\+processing\+::\+X\+ML}}
+
+
+Xml.  
+
+
+
+
+{\ttfamily \#include $<$xml.\+h$>$}
+
+\subsection*{Métodos Públicos}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classxml__processing_1_1XML_a3abbe87e5951c3c9b9c7992f6aea79f4}{X\+ML} (const std\+::string \&xml\+\_\+string)
+\begin{DoxyCompactList}\small\item\em Construtor. \end{DoxyCompactList}\item 
+bool \hyperlink{classxml__processing_1_1XML_aca612f22f1eea0d502fd20423638c844}{validation} ()
+\begin{DoxyCompactList}\small\item\em Faz a validação do arquivo xml passado. \end{DoxyCompactList}\item 
+std\+::string \hyperlink{classxml__processing_1_1XML_a85d74f298dcdd2810838e2d1665cee6a}{extract} (const std\+::string \&tag\+\_\+begin, const std\+::string \&tag\+\_\+end, std\+::size\+\_\+t \&position)
+\begin{DoxyCompactList}\small\item\em Faz a extração do conteúdo entre as tags. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Descrição Detalhada}
+Xml. 
+
+\subsection{Construtores \& Destrutores}
+\mbox{\Hypertarget{classxml__processing_1_1XML_a3abbe87e5951c3c9b9c7992f6aea79f4}\label{classxml__processing_1_1XML_a3abbe87e5951c3c9b9c7992f6aea79f4}} 
+\index{xml\+\_\+processing\+::\+X\+ML@{xml\+\_\+processing\+::\+X\+ML}!X\+ML@{X\+ML}}
+\index{X\+ML@{X\+ML}!xml\+\_\+processing\+::\+X\+ML@{xml\+\_\+processing\+::\+X\+ML}}
+\subsubsection{\texorpdfstring{X\+M\+L()}{XML()}}
+{\footnotesize\ttfamily xml\+\_\+processing\+::\+X\+M\+L\+::\+X\+ML (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{xml\+\_\+string }\end{DoxyParamCaption})}
+
+
+
+Construtor. 
+
+Recebe o arquivo xml no formado string para ser utilizado no restante dos metodos.
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em xml} & Arquivo xml no formado string. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Métodos}
+\mbox{\Hypertarget{classxml__processing_1_1XML_a85d74f298dcdd2810838e2d1665cee6a}\label{classxml__processing_1_1XML_a85d74f298dcdd2810838e2d1665cee6a}} 
+\index{xml\+\_\+processing\+::\+X\+ML@{xml\+\_\+processing\+::\+X\+ML}!extract@{extract}}
+\index{extract@{extract}!xml\+\_\+processing\+::\+X\+ML@{xml\+\_\+processing\+::\+X\+ML}}
+\subsubsection{\texorpdfstring{extract()}{extract()}}
+{\footnotesize\ttfamily std\+::string xml\+\_\+processing\+::\+X\+M\+L\+::extract (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{tag\+\_\+begin,  }\item[{const std\+::string \&}]{tag\+\_\+end,  }\item[{std\+::size\+\_\+t \&}]{position }\end{DoxyParamCaption})}
+
+
+
+Faz a extração do conteúdo entre as tags. 
+
+A extração copia o conteúdo entre as tags que estão a partir da posição passada para iniciar a busca no xml em formato de string.
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em tag\+\_\+begin} & Indicador de abertura de uma tag. \\
+\hline
+{\em tag\+\_\+end} & Indicador de fechamento de uma tag. \\
+\hline
+{\em position} & Posição inicial de busca no xml em formato string.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+String com o conteúdo entre as tags. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classxml__processing_1_1XML_aca612f22f1eea0d502fd20423638c844}\label{classxml__processing_1_1XML_aca612f22f1eea0d502fd20423638c844}} 
+\index{xml\+\_\+processing\+::\+X\+ML@{xml\+\_\+processing\+::\+X\+ML}!validation@{validation}}
+\index{validation@{validation}!xml\+\_\+processing\+::\+X\+ML@{xml\+\_\+processing\+::\+X\+ML}}
+\subsubsection{\texorpdfstring{validation()}{validation()}}
+{\footnotesize\ttfamily bool xml\+\_\+processing\+::\+X\+M\+L\+::validation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Faz a validação do arquivo xml passado. 
+
+A validação verifica se todas as tags abriram e fecharam corretamente. É utilizado uma pilha encadeada auxiliar neste processo.
+
+\begin{DoxyReturn}{Retorna}
+True se o arquivo for válido e false se for inválido. 
+\end{DoxyReturn}
+
+
+A documentação para esta classe foi gerada a partir dos seguintes arquivos\+:\begin{DoxyCompactItemize}
+\item 
+include/\hyperlink{xml_8h}{xml.\+h}\item 
+src/\hyperlink{xml_8cpp}{xml.\+cpp}\end{DoxyCompactItemize}
